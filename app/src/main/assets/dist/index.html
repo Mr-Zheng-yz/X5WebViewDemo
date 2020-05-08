@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><title>易贸大厦</title><meta name=viewport content="initial-scale=1,maximum-scale=1,user-scalable=no"><link rel="shortcut icon" href=https://source.ipalmap.com/open-platform-console/logo.png><link href=./static/css/app.74bd9ccb30e532659caee3159ac6e56a.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.6b7eecafaad298c5a947.js></script><script type=text/javascript src=./static/js/vendor.bcbf02e473ea97ff3388.js></script><script type=text/javascript src=./static/js/app.9073054786036d58eef9.js></script></body><script>//orientationchange方向改变事件
+    (function (doc,win) {
+        var docEl = doc.documentElement,//根元素html
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            //判断窗口有没有orientationchange这个方法，有就赋值给一个变量，没有就返回resize方法。
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+
+                docEl.style.fontSize = 100 * ((clientWidth > 1080 ? 1080 : clientWidth) / 1080) + 'px';
+
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);//addEventListener事件方法接受三个参数：第一个是事件名称比如点击事件onclick，第二个是要执行的函数，第三个是布尔
+        doc.addEventListener('DOMContentLoaded', recalc, false);//绑定浏览器缩放与加载时间
+    })(document, window);</script></html>

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/X5WebViewDemo.iml" filepath="$PROJECT_DIR$/X5WebViewDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/X5WebViewDemo.iml" filepath="$PROJECT_DIR$/X5WebViewDemo.iml" group="X5WebViewDemo" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="X5WebViewDemo/app" />
     </modules>
   </component>
 </project>

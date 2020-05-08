@@ -15,13 +15,13 @@ public class X5CorePreLoadService extends IntentService {
         @Override
         public void onViewInitFinished(boolean arg0) {
             //初始化完成回调
-            Toast.makeText(X5CorePreLoadService.this, "加载h5内核成功?..." + arg0, Toast.LENGTH_SHORT).show();
+            Toast.makeText(X5CorePreLoadService.this, "加载h5内核成功?   " + arg0, Toast.LENGTH_SHORT).show();
             Log.i(TAG, "onViewInitFinished: " + arg0);
         }
 
         @Override
         public void onCoreInitFinished() {
-            Toast.makeText(X5CorePreLoadService.this, "加载h5内核失败！！", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(X5CorePreLoadService.this, "加载h5内核失败！！", Toast.LENGTH_SHORT).show();
         }
     };
 

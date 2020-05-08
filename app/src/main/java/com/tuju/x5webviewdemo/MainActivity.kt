@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         btn_x5_webview.setOnClickListener {
             X5WebViewActivity.loadUrl(this@MainActivity, tv_url.text.toString())
         }
+
+        btn_vassonic.setOnClickListener {
+            VasSonicActivity.loadUrl(this@MainActivity,tv_url.text.toString())
+        }
     }
 
     private fun showSetDialog() {

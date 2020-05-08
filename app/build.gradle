@@ -13,7 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
         //X5兼容64位手机
-        ndk{
+        ndk {
             abiFilters "armeabi"
         }
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -36,4 +36,5 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation files('libs/tx_webview.jar')
+    implementation 'com.tencent.sonic:sdk:3.0.0-alpha'
 }
