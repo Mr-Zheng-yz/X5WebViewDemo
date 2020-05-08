@@ -70,6 +70,15 @@ class X5WebViewActivity : AppCompatActivity() {
         x5_webView.webChromeClient = X5WebViewChromeClient()
     }
 
+    override fun onBackPressed() {
+//        super.onBackPressed()
+        if (x5_webView.canGoBack()) {
+            x5_webView.goBack()
+        }else{
+            finish()
+        }
+    }
+
     inner class X5WebViewChromeClient : WebChromeClient() {
         override fun onProgressChanged(view: WebView?, newProgress: Int) {
             super.onProgressChanged(view, newProgress)
